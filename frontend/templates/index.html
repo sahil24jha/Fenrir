@@ -8,6 +8,10 @@
 <body>
     <p>Welcome to Fenrir!</p>
     
+    {%for name in data %}
+        <p>{{ name }}</p>
+    {% endfor %}
+
     {% for key, value in env.items() %}
         <p>{{ key }}: {{ value }}</p>
     {% endfor %}
